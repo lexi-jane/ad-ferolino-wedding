@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>
+        A & D Ferolino
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Pragati+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="gaybestfriend.css">
+    <link rel="stylesheet" href="dannys-custom-css/index.css">
+
+</head>
+
+<body>
+    <nav class="topnav navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo-fern" src="logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-link-wrapper"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-link-wrapper"><a class="nav-link" href="ourstory_link.html">OUR STORY</a></li>
+                    <li class="nav-link-wrapper"><a class="nav-link" href="wedding_link.html">WEDDING</a></li>
+                    <li class="nav-link-wrapper"><a class="nav-link" href="gallery_link.html">GALLERY</a></li>
+                    <li class="nav-link-wrapper"><a class="nav-link" href="rsvp_link.html">RSVP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="syp-asap_border">
+        <div>
+            <p id="syp">
+                Save Your Place
+            </p>
+        </div>
+
+        <div>
+            <p id="asap">
+                -- PLEASE RESPOND --
+            </p>
+        </div>
+    </div>
+
+    <div id="select_rec">
+        SELECT THE RECEPTION YOU WILL BE ATTENDING:
+    </div>
+
+    <div id="receptions">
+        <div id="hawaii_rec" class="reception-btn">
+            <div id="hawaii-inner-border"></div>
+            <p id="hi_title">
+                Hawai'i Reception
+            </p>
+            <p>
+                SATURDAY, JULY 6TH, 2019
+            </p>
+            <p>
+                6-9:30PM
+            </p>
+            <p>
+                KONA HAWAII LDS STAKE CENTER
+            </p>
+            <p>
+                75-230 KALANI ST. KAILUA-KONA, HI 96740
+            </p>
+        </div>
+        <div id="arizona_rec" class="reception-btn">
+            <div id="arizona-inner-border"></div>
+            <p id="az_title">
+                Arizona Reception
+            </p>
+            <p>
+                FRIDAY, JULY 19TH, 2019
+            </p>
+            <p>
+                6:30-9PM
+            </p>
+            <p>
+                CULLUMBER LDS CHAPEL
+            </p>
+            <p>
+                220 E CULLUMBER AVE. GILBERT, AZ 85234
+            </p>
+        </div>
+    </div>
+    <br>
+    <div style='display: none;' id="form-wrapper">
+        <div id="guest_details">
+            GUEST DETAILS
+        </div>
+        <div id="div-info">
+            <div id="info">
+                <div id="info-inner-border"></div>
+                <form action="./php/sendform.php" method="POST">
+                    <label for="location" class="info_labels">RECEPTION LOCATION</label>
+                    <input required type="text" id="location-field" disabled>
+                    <input type="hidden" name="location" id="location-field-hidden">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="fname" class="info_labels">FIRST NAME</label>
+                            <input required type="text" id="fname" name="firstname">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="info_labels">LAST NAME</label>
+                            <input required type="text" id="lname" name="lastname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="address1" class="info_labels">ADDRESS LINE 1</label>
+                            <input required type="text" id="add1" name="address1" placeholder="Street address, P.O. box">
+
+                            <label for="address2" class="info_labels">ADDRESS LINE 2</label>
+                            <input type="text" id="add2" name="address2"
+                                placeholder="Apartment, suite, unit, building, floor, etc ">
+
+                            <label for="city" class="info_labels">CITY</label>
+                            <input required type="text" id="city" name="city">
+
+                            <label for="state" class="info_labels">STATE</label>
+                            <input required type="text" id="state" name="state">
+
+                            <label for="zip" class="info_labels">ZIP</label>
+                            <input required type="text" id="zip" name="zip">
+
+                            <label for="guest_num" class="info_labels">NUMBER IN ATTENDING PARTY</label>
+                            <select id="guest_num" class="form-control" name="guest_num">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <div class=" text-center">
+                                <input type="submit" value="SUBMIT RSVP" id="submit-button">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+        (function () {
+            document.getElementById("hawaii_rec").addEventListener("click", function () {
+                document.getElementById("location-field").value = "Hawaii";
+                document.getElementById("location-field-hidden").value = "Hawaii";
+                document.getElementById("hawaii_rec").classList.add("selected-location");
+                document.getElementById("arizona_rec").classList.remove("selected-location");
+                document.getElementById("form-wrapper").style.display = "block";
+            });
+            document.getElementById("arizona_rec").addEventListener("click", function () {
+                document.getElementById("location-field").value = "Arizona";
+                document.getElementById("location-field-hidden").value = "Arizona";
+                document.getElementById("hawaii_rec").classList.remove("selected-location");
+                document.getElementById("arizona_rec").classList.add("selected-location");
+                document.getElementById("form-wrapper").style.display = "block";
+            });
+            $(".reception-btn").on("click", function () {
+                $('html, body').animate({
+                    scrollTop: $("#form-wrapper").offset().top
+                }, 1000);
+            });
+        })();
+    </script>
+</body>
+
+</html>

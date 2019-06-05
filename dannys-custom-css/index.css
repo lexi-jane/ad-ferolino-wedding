@@ -1,0 +1,88 @@
+#index_border {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 150px;
+    border: none;
+}
+
+.nav-link {
+    color: white !important;
+    margin: auto;
+}
+
+.nav {
+    text-align: center;
+}
+
+#our-names {
+    top: 280px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    #our-names {
+        font-size: 40px;
+        line-height: 40px;
+        top: 250px;
+    }
+    #date {
+        font-size: 40px;
+        line-height: 40px;
+        top: 250px;
+    }
+    #landing-page-background img {
+        overflow: hidden;
+        object-position: 66% 12% !important;
+    }
+    #landing-page-background {
+        min-width: auto;
+    }
+}
+
+#logo-fern {
+    width: 95%;
+    margin-top: -26px;
+}
+
+#date {
+    color: rgba(255, 255, 255, 0.473);
+    background: none;
+    background-clip: none;
+    -webkit-text-fill-color: none !important;
+    text-decoration: none;
+    font-size: 40px;
+    font-style: inherit;
+}
+
+.content-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#landing-page-background {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+}
+
+#landing-page-background img {
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin-top: -5%;
+    object-fit: cover;
+    object-position: 50% 12%;
+}
+
+#bg-layer {
+    background-color:rgba(0, 0, 0, 0.425);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

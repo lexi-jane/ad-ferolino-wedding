@@ -1,0 +1,264 @@
+<html>
+  <head>
+      <title>
+          A & D Ferolino
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      
+      <link href="https://fonts.googleapis.com/css?family=PT+Serif|Pragati+Narrow" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+      <!-- Latest compiled and minified JavaScript -->
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="gaybestfriend.css">
+      <link rel="stylesheet" href="dannys-custom-css/index.css">
+      
+  </head>
+
+  <body>
+    <nav class="topnav navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img id="logo-fern" src="logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="nav-link-wrapper"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-link-wrapper"><a class="nav-link" href="ourstory_link.html">OUR STORY</a></li>
+              <li class="nav-link-wrapper"><a class="nav-link" href="wedding_link.html">WEDDING</a></li>
+              <li class="nav-link-wrapper"><a class="nav-link" href="gallery_link.html">GALLERY</a></li>
+              <li class="nav-link-wrapper"><a class="nav-link" href="rsvp_link.html">RSVP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="photogallery-border" >
+      <div>
+          <p id="photogallery">
+                  Photo Gallery
+              </p>
+      </div>
+      <div>
+          <p id="captured-moments">
+              --SOME OF OUR CAPTURED MOMENTS--
+          </p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img src="christmas.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow thumbnails cursor">
+        <img src="sg.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor thumbnails">
+        <img src="cheese2.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow thumbnails cursor">
+        <img src="cheese.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow thumbnails cursor">
+        <img src="castle.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow thumbnails cursor">
+      </div>
+ 
+      <div class="column">
+        <img src="kiss.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow thumbnails cursor">
+        <img src="temple4.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow thumbnails cursor">
+        <img src="faces.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow thumbnails cursor">
+        <img src="fishy.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow thumbnails cursor">
+        <img src="halohalo.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow thumbnails cursor">
+      </div>      
+
+      <div class="column">
+        <img src="pink.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow thumbnails cursor">
+        <img src="park.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow thumbnails cursor">
+        <img src="graduation.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow thumbnails cursor">
+        <img src="graduation2.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow thumbnails cursor" id="grad2">
+        <img src="proposal.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow thumbnails cursor">
+      </div>
+
+      <div class="column">
+        <img src="ring.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow thumbnails cursor">
+        <img src="golf.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow thumbnails cursor">
+        <img src="pool.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow thumbnails cursor">
+        <img src="piff.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow thumbnails cursor">
+      </div>
+    </div>
+      
+    <!-- --------MODAL----------------- -->
+
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 19</div>
+          <img src="christmas.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 19</div>
+          <img src="sg.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 19</div>
+          <img src="cheese2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 19</div>
+          <img src="cheese.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 19</div>
+          <img src="castle.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 19</div>
+          <img src="kiss.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 19</div>
+          <img src="temple4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 19</div>
+          <img src="faces.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 19</div>
+          <img src="fishy.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 19</div>
+          <img src="halohalo.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 19</div>
+          <img src="pink.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 19</div>
+          <img src="park.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 19</div>
+          <img src="graduation.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">14 / 19</div>
+            <img src="graduation2.jpg" style="width:100%">
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext">15 / 19</div>
+          <img src="proposal.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">16 / 19</div>
+          <img src="ring.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">17 / 19</div>
+          <img src="golf.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">18 / 19</div>
+          <img src="pool.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">19 / 19</div>
+          <img src="piff.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      </div>
+    </div>
+      
+      <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </body>
+</html>
+
